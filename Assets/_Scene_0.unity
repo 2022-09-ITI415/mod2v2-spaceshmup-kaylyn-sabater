@@ -382,17 +382,17 @@ MonoBehaviour:
   enemyDefaultPadding: 1.5
   weaponDefinitions:
   - type: 1
-    letter: B
+    letter: Blaster
     color: {r: 1, g: 1, b: 1, a: 1}
     projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
       type: 3}
     projectileColor: {r: 1, g: 1, b: 1, a: 1}
-    damageOnHit: 5
+    damageOnHit: 3
     continuousDamage: 0
     delayBetweenShots: 0.2
     velocity: 50
   - type: 2
-    letter: S
+    letter: Spread
     color: {r: 0, g: 0.65676546, b: 1, a: 1}
     projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
       type: 3}
@@ -402,7 +402,7 @@ MonoBehaviour:
     delayBetweenShots: 0.4
     velocity: 50
   - type: 6
-    letter: O
+    letter: Shield
     color: {r: 0, g: 1, b: 0.024693727, a: 1}
     projectilePrefab: {fileID: 0}
     projectileColor: {r: 0, g: 1, b: 0.02745098, a: 1}
@@ -411,32 +411,32 @@ MonoBehaviour:
     delayBetweenShots: 0
     velocity: 0
   - type: 5
-    letter: L
+    letter: Laser
     color: {r: 1, g: 0.02591994, b: 0, a: 1}
     projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
       type: 3}
     projectileColor: {r: 1, g: 0.027450982, b: 0, a: 1}
-    damageOnHit: 2
+    damageOnHit: 1
     continuousDamage: 2
     delayBetweenShots: 0
-    velocity: 40
+    velocity: 60
   - type: 4
-    letter: M
+    letter: Missile
     color: {r: 1, g: 0, b: 0.8873906, a: 1}
     projectilePrefab: {fileID: 1899541879965282, guid: 0de842095e0e5a44aa993ae6f524f4d0,
       type: 3}
     projectileColor: {r: 1, g: 0, b: 0.8862746, a: 1}
     damageOnHit: 10
     continuousDamage: 0
-    delayBetweenShots: 4
-    velocity: 60
+    delayBetweenShots: 3
+    velocity: 90
   - type: 3
-    letter: P
+    letter: Phaser
     color: {r: 1, g: 0.57067186, b: 0, a: 1}
     projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
       type: 3}
     projectileColor: {r: 1, g: 0.57254905, b: 0, a: 1}
-    damageOnHit: 2
+    damageOnHit: 5
     continuousDamage: 1
     delayBetweenShots: 0.2
     velocity: 50
@@ -651,7 +651,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 47a1b347f667acd44a3adb78b1449a99, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -724,6 +724,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 23594559237923940, guid: d38b8bdef6bb4724e9a7341bda0aad27,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 61a11e598af341a43ab2c276a35fb4d5, type: 2}
     - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
         type: 3}
       propertyPath: _type
@@ -853,6 +858,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 23594559237923940, guid: d38b8bdef6bb4724e9a7341bda0aad27,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 61a11e598af341a43ab2c276a35fb4d5, type: 2}
     - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
         type: 3}
       propertyPath: def.color.b
@@ -1050,6 +1060,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 23594559237923940, guid: d38b8bdef6bb4724e9a7341bda0aad27,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 47a1b347f667acd44a3adb78b1449a99, type: 2}
     - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
         type: 3}
       propertyPath: collar
@@ -1396,6 +1411,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 23594559237923940, guid: d38b8bdef6bb4724e9a7341bda0aad27,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 61a11e598af341a43ab2c276a35fb4d5, type: 2}
     - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
         type: 3}
       propertyPath: _type
@@ -1549,7 +1569,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 61a11e598af341a43ab2c276a35fb4d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1654,6 +1674,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 23594559237923940, guid: d38b8bdef6bb4724e9a7341bda0aad27,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 61a11e598af341a43ab2c276a35fb4d5, type: 2}
     - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
         type: 3}
       propertyPath: _type
