@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -387,7 +387,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
       type: 3}
     projectileColor: {r: 1, g: 1, b: 1, a: 1}
-    damageOnHit: 1
+    damageOnHit: 5
     continuousDamage: 0
     delayBetweenShots: 0.2
     velocity: 50
@@ -397,7 +397,7 @@ MonoBehaviour:
     projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
       type: 3}
     projectileColor: {r: 0, g: 0.654902, b: 1, a: 1}
-    damageOnHit: 1
+    damageOnHit: 2
     continuousDamage: 0
     delayBetweenShots: 0.4
     velocity: 50
@@ -410,9 +410,39 @@ MonoBehaviour:
     continuousDamage: 0
     delayBetweenShots: 0
     velocity: 0
+  - type: 5
+    letter: L
+    color: {r: 1, g: 0.02591994, b: 0, a: 1}
+    projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
+      type: 3}
+    projectileColor: {r: 1, g: 0.027450982, b: 0, a: 1}
+    damageOnHit: 2
+    continuousDamage: 2
+    delayBetweenShots: 0
+    velocity: 40
+  - type: 4
+    letter: M
+    color: {r: 1, g: 0, b: 0.8873906, a: 1}
+    projectilePrefab: {fileID: 1899541879965282, guid: 0de842095e0e5a44aa993ae6f524f4d0,
+      type: 3}
+    projectileColor: {r: 1, g: 0, b: 0.8862746, a: 1}
+    damageOnHit: 10
+    continuousDamage: 0
+    delayBetweenShots: 4
+    velocity: 60
+  - type: 3
+    letter: P
+    color: {r: 1, g: 0.57067186, b: 0, a: 1}
+    projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
+      type: 3}
+    projectileColor: {r: 1, g: 0.57254905, b: 0, a: 1}
+    damageOnHit: 2
+    continuousDamage: 1
+    delayBetweenShots: 0.2
+    velocity: 50
   prefabPowerUp: {fileID: 1062273549804748, guid: 9649a9a79085a854d9990613a980f435,
     type: 3}
-  powerUpFrequency: 01000000010000000200000006000000
+  powerUpFrequency: 010000000200000005000000060000000400000003000000
 --- !u!20 &282840813
 Camera:
   m_ObjectHideFlags: 0
@@ -837,6 +867,21 @@ PrefabInstance:
         type: 3}
       propertyPath: def.color.r
       value: 0.31219295
+      objectReference: {fileID: 0}
+    - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
+        type: 3}
+      propertyPath: def.projectileColor.b
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
+        type: 3}
+      propertyPath: def.projectileColor.g
+      value: 0.9607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 114684557380802588, guid: d38b8bdef6bb4724e9a7341bda0aad27,
+        type: 3}
+      propertyPath: def.projectileColor.r
+      value: 0.3137255
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d38b8bdef6bb4724e9a7341bda0aad27, type: 3}
