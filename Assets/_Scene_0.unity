@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -378,13 +378,16 @@ MonoBehaviour:
   - {fileID: 1158547974957732, guid: a0a74b7d2e3ac2449b0e77185af83fed, type: 3}
   - {fileID: 1700942416061258, guid: 3f6055558a488314cb38691d88c41fdf, type: 3}
   - {fileID: 1539775467464788, guid: 06677ec088bca734db80dc6ecea1d7af, type: 3}
+  - {fileID: 1539775467464788, guid: 06677ec088bca734db80dc6ecea1d7af, type: 3}
+  - {fileID: 1539775467464788, guid: ce9a0c4dd0a604a4f90248d08f6c6d41, type: 3}
+  - {fileID: 1539775467464788, guid: ce9a0c4dd0a604a4f90248d08f6c6d41, type: 3}
   enemySpawnPerSecond: 0.5
   enemyDefaultPadding: 1.5
   weaponDefinitions:
   - type: 1
     letter: Blaster
     color: {r: 1, g: 1, b: 1, a: 1}
-    projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
+    projectilePrefab: {fileID: 1899541879965282, guid: ce0b07b0ce3aef842abb6f964b740ffa,
       type: 3}
     projectileColor: {r: 1, g: 1, b: 1, a: 1}
     damageOnHit: 3
@@ -394,7 +397,7 @@ MonoBehaviour:
   - type: 2
     letter: Spread
     color: {r: 0, g: 0.65676546, b: 1, a: 1}
-    projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
+    projectilePrefab: {fileID: 1899541879965282, guid: ce0b07b0ce3aef842abb6f964b740ffa,
       type: 3}
     projectileColor: {r: 0, g: 0.654902, b: 1, a: 1}
     damageOnHit: 2
@@ -413,11 +416,11 @@ MonoBehaviour:
   - type: 5
     letter: Laser
     color: {r: 1, g: 0.02591994, b: 0, a: 1}
-    projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
+    projectilePrefab: {fileID: 1899541879965282, guid: ce0b07b0ce3aef842abb6f964b740ffa,
       type: 3}
     projectileColor: {r: 1, g: 0.027450982, b: 0, a: 1}
     damageOnHit: 1
-    continuousDamage: 2
+    continuousDamage: 0.2
     delayBetweenShots: 0
     velocity: 60
   - type: 4
@@ -433,7 +436,7 @@ MonoBehaviour:
   - type: 3
     letter: Phaser
     color: {r: 1, g: 0.57067186, b: 0, a: 1}
-    projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
+    projectilePrefab: {fileID: 1899541879965282, guid: ce0b07b0ce3aef842abb6f964b740ffa,
       type: 3}
     projectileColor: {r: 1, g: 0.57254905, b: 0, a: 1}
     damageOnHit: 5
