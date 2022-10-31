@@ -12,9 +12,9 @@ public enum WeaponType
     none, // The default / no weapons
     blaster, // A simple blaster
     spread, // Two shots simultaneously
-    phaser, // [NI] Shots that move in waves
-    missile, // [NI] Homing missiles
-    laser, // [NI] Damage over time
+    phaser, //  Shots that move in waves
+    missile, // Homing missiles
+    laser, // Damage over time
     shield // Raise shieldLevel
 }
 
@@ -101,7 +101,7 @@ public class Weapon : MonoBehaviour {
 
     public void Fire()
     {
-        Debug.Log("Weapon Fired:" + gameObject.name);
+        //Debug.Log("Weapon Fired:" + gameObject.name);
         // If this.gameObject is inactive, return
         if (!gameObject.activeInHierarchy) return;
         // If it hasn't been enough time between shots, return
@@ -132,6 +132,26 @@ public class Weapon : MonoBehaviour {
                 p.transform.rotation = Quaternion.AngleAxis(-10, Vector3.back);
                 p.rigid.velocity = p.transform.rotation * vel;
                 break;
+
+            case WeaponType.laser:
+                p = MakeProjectile();
+                p.rigid.velocity = vel;
+                break;
+
+            case WeaponType.missile:
+                p = MakeProjectile();
+                p.rigid.velocity = vel;
+                break;
+
+            case WeaponType.phaser:
+                p = MakeProjectile();
+                p.rigid.velocity = vel;
+                break;
+
+
+
+                
+
         }
     }
 
