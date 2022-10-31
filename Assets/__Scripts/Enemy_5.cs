@@ -10,6 +10,7 @@ public class Enemy_5 : Enemy {
     [Header("Set Dynamically: Enemy_5")]
     public Vector3[] points;
     public float birthTime;
+    
  private void Start()
     {
         points = new Vector3[3]; // Initialize points

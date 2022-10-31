@@ -419,10 +419,10 @@ MonoBehaviour:
     projectilePrefab: {fileID: 1899541879965282, guid: ce0b07b0ce3aef842abb6f964b740ffa,
       type: 3}
     projectileColor: {r: 1, g: 0.027450982, b: 0, a: 1}
-    damageOnHit: 1
-    continuousDamage: 0.2
+    damageOnHit: 0.5
+    continuousDamage: 0.1
     delayBetweenShots: 0
-    velocity: 60
+    velocity: 40
   - type: 4
     letter: Missile
     color: {r: 1, g: 0, b: 0.8873906, a: 1}
